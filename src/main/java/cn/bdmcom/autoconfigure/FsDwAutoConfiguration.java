@@ -7,14 +7,14 @@ import cn.bdmcom.core.service.FsDwRecordService;
 import cn.bdmcom.core.service.FsDwTableService;
 import cn.bdmcom.core.service.FsDwTokenService;
 import com.dtflys.forest.springboot.annotation.ForestScan;
-import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
 /**
  * 飞书多维表格 Starter 自动配置。
  */
-@AutoConfiguration
+@Configuration
 @EnableConfigurationProperties(FsDwProperties.class)
 @ForestScan(basePackages = "cn.bdmcom.core.api")
 public class FsDwAutoConfiguration {

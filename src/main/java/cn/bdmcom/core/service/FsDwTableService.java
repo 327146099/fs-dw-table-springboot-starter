@@ -171,7 +171,8 @@ public class FsDwTableService {
         try {
             T result = objectMapper.readValue(res, clazz);
             BitableAssert.notNull(result, BitableErrorCode.FEISHU_RESPONSE_PARSE_ERROR, "[飞书多维表格][{}]解析结果为空", action);
-            if (result instanceof AbstractRes<?> abstractRes) {
+            if (result instanceof AbstractRes<?>) {
+                AbstractRes<?> abstractRes = (AbstractRes<?>)result;
                 BitableAssert.isTrue(SUCCESS_CODE.equals(abstractRes.getCode()), BitableErrorCode.FEISHU_API_ERROR,
                         "[飞书多维表格][{}]失败, code={}, msg={}", action, abstractRes.getCode(), abstractRes.getMsg());
             }

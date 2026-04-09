@@ -4,8 +4,9 @@ import cn.bdmcom.config.FsDwProperties;
 import cn.bdmcom.core.service.FsDwFieldService;
 import cn.bdmcom.core.service.FsDwRecordService;
 import cn.bdmcom.core.service.FsDwTableService;
-import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Autowired;
+
+import javax.annotation.PostConstruct;
 
 /**
  * FsDwHelper 自动注册器。
