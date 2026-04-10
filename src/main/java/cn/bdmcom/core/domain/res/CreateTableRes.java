@@ -25,18 +25,21 @@ public class CreateTableRes extends AbstractRes<CreateTableRes.CreateTableData> 
          * 数据表 ID。
          */
         @JsonProperty("table_id")
+        @com.alibaba.fastjson.annotation.JSONField(name = "table_id")
         private String tableId;
 
         /**
          * 默认视图 ID。
          */
         @JsonProperty("default_view_id")
+        @com.alibaba.fastjson.annotation.JSONField(name = "default_view_id")
         private String defaultViewId;
 
         /**
          * 初始字段 ID 列表。
          */
         @JsonProperty("field_id_list")
+        @com.alibaba.fastjson.annotation.JSONField(name = "field_id_list")
         private List<String> fieldIdList;
     }
 }

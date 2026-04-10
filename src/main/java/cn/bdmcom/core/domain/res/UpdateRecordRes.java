@@ -47,6 +47,7 @@ public class UpdateRecordRes extends AbstractRes<UpdateRecordRes.RecordRes> {
              * 表格ID
              */
             @JsonProperty("record_id")
+            @com.alibaba.fastjson.annotation.JSONField(name = "record_id")
             private String recordId;
         }
     }

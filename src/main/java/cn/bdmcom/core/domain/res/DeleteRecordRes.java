@@ -27,6 +27,7 @@ public class DeleteRecordRes extends AbstractRes<DeleteRecordRes.RecordRes> {
          * 记录ID
          */
         @JsonProperty("record_id")
+        @com.alibaba.fastjson.annotation.JSONField(name = "record_id")
         private String recordId;
     }
 }

@@ -18,18 +18,21 @@ public class FieldInfo {
      * 字段 ID。
      */
     @JsonProperty("field_id")
+    @com.alibaba.fastjson.annotation.JSONField(name = "field_id")
     private String fieldId;
 
     /**
      * 字段名称。
      */
     @JsonProperty("field_name")
+    @com.alibaba.fastjson.annotation.JSONField(name = "field_name")
     private String fieldName;
 
     /**
      * 是否为主键字段。
      */
     @JsonProperty("is_primary")
+    @com.alibaba.fastjson.annotation.JSONField(name = "is_primary")
     private Boolean primary;
 
     /**
@@ -51,11 +54,13 @@ public class FieldInfo {
      * 字段 UI 类型。
      */
     @JsonProperty("ui_type")
+    @com.alibaba.fastjson.annotation.JSONField(name = "ui_type")
     private String uiType;
 
     /**
      * 是否为隐藏字段。
      */
     @JsonProperty("is_hidden")
+    @com.alibaba.fastjson.annotation.JSONField(name = "is_hidden")
     private Boolean hidden;
 }

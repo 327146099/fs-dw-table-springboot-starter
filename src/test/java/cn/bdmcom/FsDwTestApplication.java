@@ -1,9 +1,7 @@
 package cn.bdmcom;
 
 import cn.bdmcom.annotation.EnableFsDwTable;
-import cn.bdmcom.core.domain.res.CreateTableRes;
 import cn.bdmcom.core.helper.FsDwRecordHelper;
-import cn.bdmcom.core.helper.FsDwTableHelper;
 import cn.bdmcom.core.service.FsDwTableService;
 import cn.hutool.core.util.IdUtil;
 import org.junit.Test;
@@ -12,8 +10,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-
-import java.util.List;
 
 @SpringBootApplication
 @RunWith(SpringRunner.class)

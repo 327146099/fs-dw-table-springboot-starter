@@ -17,6 +17,7 @@ public class UpdateFieldReq {
      * 字段名称。
      */
     @JsonProperty("field_name")
+    @com.alibaba.fastjson.annotation.JSONField(name = "field_name")
     private String fieldName;
 
     /**
@@ -38,6 +39,7 @@ public class UpdateFieldReq {
      * 字段 UI 类型。
      */
     @JsonProperty("ui_type")
+    @com.alibaba.fastjson.annotation.JSONField(name = "ui_type")
     private String uiType;
 
     /**

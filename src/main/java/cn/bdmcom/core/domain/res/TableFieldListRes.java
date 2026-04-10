@@ -31,12 +31,14 @@ public class TableFieldListRes extends AbstractRes<TableFieldListRes.FieldListDa
          * 是否还有下一页。
          */
         @JsonProperty("has_more")
+        @com.alibaba.fastjson.annotation.JSONField(name = "has_more")
         private Boolean hasMore;
 
         /**
          * 下一页 token。
          */
         @JsonProperty("page_token")
+        @com.alibaba.fastjson.annotation.JSONField(name = "page_token")
         private String pageToken;
     }
 
@@ -51,18 +53,21 @@ public class TableFieldListRes extends AbstractRes<TableFieldListRes.FieldListDa
          * 字段 ID。
          */
         @JsonProperty("field_id")
+        @com.alibaba.fastjson.annotation.JSONField(name = "field_id")
         private String fieldId;
 
         /**
          * 字段名称。
          */
         @JsonProperty("field_name")
+        @com.alibaba.fastjson.annotation.JSONField(name = "field_name")
         private String fieldName;
 
         /**
          * 是否为主键字段。
          */
         @JsonProperty("is_primary")
+        @com.alibaba.fastjson.annotation.JSONField(name = "is_primary")
         private Boolean primary;
 
         /**

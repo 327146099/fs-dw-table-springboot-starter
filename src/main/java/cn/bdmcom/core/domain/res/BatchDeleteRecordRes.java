@@ -42,6 +42,7 @@ public class BatchDeleteRecordRes extends AbstractRes<BatchDeleteRecordRes.Batch
          * 记录 ID。
          */
         @JsonProperty("record_id")
+        @com.alibaba.fastjson.annotation.JSONField(name = "record_id")
         private String recordId;
     }
 }

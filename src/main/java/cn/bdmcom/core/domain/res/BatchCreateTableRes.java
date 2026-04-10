@@ -25,6 +25,7 @@ public class BatchCreateTableRes extends AbstractRes<BatchCreateTableRes.BatchCr
          * 数据表 ID 列表。
          */
         @JsonProperty("table_ids")
+        @com.alibaba.fastjson.annotation.JSONField(name = "table_ids")
         private List<String> tableIds;
     }
 }

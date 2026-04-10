@@ -25,6 +25,7 @@ public class RecordUser {
      * 英文名称。
      */
     @JsonProperty("en_name")
+    @com.alibaba.fastjson.annotation.JSONField(name = "en_name")
     private String enName;
 
     /**
@@ -36,5 +37,6 @@ public class RecordUser {
      * 头像链接。
      */
     @JsonProperty("avatar_url")
+    @com.alibaba.fastjson.annotation.JSONField(name = "avatar_url")
     private String avatarUrl;
 }

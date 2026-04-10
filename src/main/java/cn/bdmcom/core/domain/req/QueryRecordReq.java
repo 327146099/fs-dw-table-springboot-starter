@@ -18,12 +18,14 @@ public class QueryRecordReq {
      * 视图ID。
      */
     @JsonProperty("view_id")
+    @com.alibaba.fastjson.annotation.JSONField(name = "view_id")
     private String viewId;
 
     /**
      * 字段名称列表（field_names），为空时默认返回视图字段。
      */
     @JsonProperty("field_names")
+    @com.alibaba.fastjson.annotation.JSONField(name = "field_names")
     private List<String> fieldNames;
 
     /**
@@ -35,6 +37,7 @@ public class QueryRecordReq {
      * 是否包含自动字段（系统字段）。
      */
     @JsonProperty("automatic_fields")
+    @com.alibaba.fastjson.annotation.JSONField(name = "automatic_fields")
     private Boolean automaticFields;
 
     /**
@@ -46,18 +49,21 @@ public class QueryRecordReq {
      * 分页 token。
      */
     @JsonProperty("page_token")
+    @com.alibaba.fastjson.annotation.JSONField(name = "page_token")
     private String pageToken;
 
     /**
      * 当前页（从 1 开始，仅用于内部分页控制）。
      */
     @JsonIgnore
+    @com.alibaba.fastjson.annotation.JSONField(serialize = false)
     private Integer pageNo;
 
     /**
      * 每页数量。
      */
     @JsonProperty("page_size")
+    @com.alibaba.fastjson.annotation.JSONField(name = "page_size")
     private Integer pageSize;
 
 
@@ -70,6 +76,7 @@ public class QueryRecordReq {
          * 字段名称。
          */
         @JsonProperty("field_name")
+        @com.alibaba.fastjson.annotation.JSONField(name = "field_name")
         private String fieldName;
         /**
          * 排序方式（true=倒序）。
@@ -107,6 +114,7 @@ public class QueryRecordReq {
              * 字段名称。
              */
             @JsonProperty("field_name")
+            @com.alibaba.fastjson.annotation.JSONField(name = "field_name")
             private String fieldName;
             /**
              * 操作符（如 is、contains 等）。

@@ -27,6 +27,7 @@ public class QueryRecordRes extends AbstractRes<QueryRecordRes.RecordRes> {
          * 是否存在更多
          */
         @JsonProperty("has_more")
+        @com.alibaba.fastjson.annotation.JSONField(name = "has_more")
         private Boolean hasMore;
 
         /**
@@ -38,6 +39,7 @@ public class QueryRecordRes extends AbstractRes<QueryRecordRes.RecordRes> {
          * 下一页 token
          */
         @JsonProperty("page_token")
+        @com.alibaba.fastjson.annotation.JSONField(name = "page_token")
         private String pageToken;
 
         /**
@@ -55,16 +57,19 @@ public class QueryRecordRes extends AbstractRes<QueryRecordRes.RecordRes> {
              * 记录ID
              */
             @JsonProperty("record_id")
+            @com.alibaba.fastjson.annotation.JSONField(name = "record_id")
             private String recordId;
             /**
              * 最后修改时间
              */
             @JsonProperty("last_modified_time")
+            @com.alibaba.fastjson.annotation.JSONField(name = "last_modified_time")
             private String lastModifiedTime;
             /**
              * 创建时间
              */
             @JsonProperty("created_time")
+            @com.alibaba.fastjson.annotation.JSONField(name = "created_time")
             private String createdTime;
             /**
              * 字段

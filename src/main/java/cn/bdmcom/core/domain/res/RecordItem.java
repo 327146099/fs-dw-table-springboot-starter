@@ -22,6 +22,7 @@ public class RecordItem {
      * 记录 ID。
      */
     @JsonProperty("record_id")
+    @com.alibaba.fastjson.annotation.JSONField(name = "record_id")
     private String recordId;
 
     /**
@@ -33,35 +34,41 @@ public class RecordItem {
      * 创建人信息。
      */
     @JsonProperty("created_by")
+    @com.alibaba.fastjson.annotation.JSONField(name = "created_by")
     private RecordUser createdBy;
 
     /**
      * 修改人信息。
      */
     @JsonProperty("last_modified_by")
+    @com.alibaba.fastjson.annotation.JSONField(name = "last_modified_by")
     private RecordUser lastModifiedBy;
 
     /**
      * 创建时间（毫秒级时间戳）。
      */
     @JsonProperty("created_time")
+    @com.alibaba.fastjson.annotation.JSONField(name = "created_time")
     private Long createdTime;
 
     /**
      * 最近修改时间（毫秒级时间戳）。
      */
     @JsonProperty("last_modified_time")
+    @com.alibaba.fastjson.annotation.JSONField(name = "last_modified_time")
     private Long lastModifiedTime;
 
     /**
      * 分享链接。
      */
     @JsonProperty("shared_url")
+    @com.alibaba.fastjson.annotation.JSONField(name = "shared_url")
     private String sharedUrl;
 
     /**
      * 记录链接。
      */
     @JsonProperty("record_url")
+    @com.alibaba.fastjson.annotation.JSONField(name = "record_url")
     private String recordUrl;
 }

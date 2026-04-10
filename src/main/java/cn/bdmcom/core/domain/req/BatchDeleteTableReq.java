@@ -1,5 +1,6 @@
 package cn.bdmcom.core.domain.req;
 
+import com.alibaba.fastjson.annotation.JSONField;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
@@ -15,5 +16,6 @@ public class BatchDeleteTableReq {
      * 待删除的数据表 ID 列表。
      */
     @JsonProperty("table_ids")
+    @JSONField(name = "table_ids")
     private List<String> tableIds;
 }

@@ -26,12 +26,14 @@ public class BatchUpdateRecordReq {
          * 记录 ID。
          */
         @JsonProperty("record_id")
+        @com.alibaba.fastjson.annotation.JSONField(name = "record_id")
         private String recordId;
 
         /**
          * 字段值集合（字段名 -> 值）。
          */
         @JsonProperty("fields")
+        @com.alibaba.fastjson.annotation.JSONField(name = "fields")
         private Map<String, Object> fields;
     }
 }

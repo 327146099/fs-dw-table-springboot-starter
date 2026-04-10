@@ -15,11 +15,13 @@ public class QueryTokenReq {
      * 应用ID。
      */
     @JsonProperty("app_id")
+    @com.alibaba.fastjson.annotation.JSONField(name = "app_id")
     private String appId;
 
     /**
      * 应用密钥。
      */
     @JsonProperty("app_secret")
+    @com.alibaba.fastjson.annotation.JSONField(name = "app_secret")
     private String appSecret;
 }

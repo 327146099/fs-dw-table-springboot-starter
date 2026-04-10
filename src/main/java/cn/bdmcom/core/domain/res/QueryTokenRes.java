@@ -13,6 +13,7 @@ public class QueryTokenRes {
      * 应用访问令牌。
      */
     @JsonProperty("app_access_token")
+    @com.alibaba.fastjson.annotation.JSONField(name = "app_access_token")
     private String appAccessToken;
 
     /**
@@ -34,5 +35,6 @@ public class QueryTokenRes {
      * 租户访问令牌（如有）。
      */
     @JsonProperty("tenant_access_token")
+    @com.alibaba.fastjson.annotation.JSONField(name = "tenant_access_token")
     private String tenantAccessToken;
 }

@@ -23,6 +23,7 @@ public class DeleteFieldRes extends AbstractRes<DeleteFieldRes.DeleteFieldData> 
          * 字段 ID。
          */
         @JsonProperty("field_id")
+        @com.alibaba.fastjson.annotation.JSONField(name = "field_id")
         private String fieldId;
 
         /**

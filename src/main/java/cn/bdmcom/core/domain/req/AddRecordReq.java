@@ -1,5 +1,6 @@
 package cn.bdmcom.core.domain.req;
 
+import com.alibaba.fastjson.annotation.JSONField;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
@@ -15,5 +16,6 @@ public class AddRecordReq {
      * 字段值集合（字段名 -> 值）。
      */
     @JsonProperty("fields")
-    private Map<String, Object> fields;
+    @JSONField(name = "fields")
+    public Map<String, Object> fields;
 }

@@ -30,12 +30,14 @@ public class BatchGetRecordRes extends AbstractRes<BatchGetRecordRes.BatchGetDat
          * 无权限访问的记录 ID 列表。
          */
         @JsonProperty("forbidden_record_ids")
+        @com.alibaba.fastjson.annotation.JSONField(name = "forbidden_record_ids")
         private List<String> forbiddenRecordIds;
 
         /**
          * 不存在的记录 ID 列表。
          */
         @JsonProperty("absent_record_ids")
+        @com.alibaba.fastjson.annotation.JSONField(name = "absent_record_ids")
         private List<String> absentRecordIds;
     }
 }

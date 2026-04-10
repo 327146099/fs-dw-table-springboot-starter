@@ -3,6 +3,7 @@ package cn.bdmcom.core.domain.req;
 
 import cn.bdmcom.core.domain.FieldDescription;
 import cn.bdmcom.core.domain.TypeEnum;
+import com.alibaba.fastjson.annotation.JSONField;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 
@@ -18,6 +19,7 @@ public class AddFieldReq {
      * 字段名称。
      */
     @JsonProperty("field_name")
+    @JSONField(name = "field_name")
     private String fieldName;
 
     /**
@@ -39,6 +41,7 @@ public class AddFieldReq {
      * 字段 UI 类型。
      */
     @JsonProperty("ui_type")
+    @JSONField(name = "ui_type")
     private String uiType;
 
     /**

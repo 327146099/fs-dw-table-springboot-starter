@@ -31,6 +31,7 @@ public class CreateTableReq {
          * 默认视图名称。
          */
         @JsonProperty("default_view_name")
+        @com.alibaba.fastjson.annotation.JSONField(name = "default_view_name")
         private String defaultViewName;
 
         /**
@@ -48,6 +49,7 @@ public class CreateTableReq {
          * 字段名称。
          */
         @JsonProperty("field_name")
+        @com.alibaba.fastjson.annotation.JSONField(name = "field_name")
         private String fieldName;
 
         /**
@@ -59,6 +61,7 @@ public class CreateTableReq {
          * UI 类型。
          */
         @JsonProperty("ui_type")
+        @com.alibaba.fastjson.annotation.JSONField(name = "ui_type")
         private String uiType;
 
         /**

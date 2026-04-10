@@ -22,9 +22,11 @@ public class ListTableRes extends AbstractRes<ListTableRes.TableListData> {
     @JsonIgnoreProperties(ignoreUnknown = true)
     public static class TableListData {
         @JsonProperty("has_more")
+        @com.alibaba.fastjson.annotation.JSONField(name = "has_more")
         private Boolean hasMore;
 
         @JsonProperty("page_token")
+        @com.alibaba.fastjson.annotation.JSONField(name = "page_token")
         private String pageToken;
 
         private Integer total;
@@ -39,6 +41,7 @@ public class ListTableRes extends AbstractRes<ListTableRes.TableListData> {
     @JsonIgnoreProperties(ignoreUnknown = true)
     public static class TableItem {
         @JsonProperty("table_id")
+        @com.alibaba.fastjson.annotation.JSONField(name = "table_id")
         private String tableId;
 
         private Integer revision;

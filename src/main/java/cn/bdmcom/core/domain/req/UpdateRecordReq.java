@@ -15,5 +15,6 @@ public class UpdateRecordReq {
      * 字段值集合（字段名 -> 值）。
      */
     @JsonProperty("fields")
+    @com.alibaba.fastjson.annotation.JSONField(name = "fields")
     private Map<String, Object> fields;
 }
